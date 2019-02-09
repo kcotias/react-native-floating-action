@@ -204,10 +204,7 @@ class FloatingAction extends Component {
     }
 
     if (!active) {
-      if (!floatingIcon) {
-        Animated.spring(this.animation, { toValue: 1 }).start();
-      }
-
+      
       Animated.spring(this.actionsAnimation, { toValue: 1 }).start();
 
       // only execute it for the background to prevent extra calls
